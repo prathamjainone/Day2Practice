@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratham Jain | Digital Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(ellipse at top, #0f0f0f, #000000);
+            color: #e0e0e0;
+            overflow-x: hidden;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(90deg, #00feba, #5b548a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            color: #aaa;
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+            transition: 0.3s ease-in-out;
+        }
+
+        section:hover {
+            box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+            transform: scale(1.01);
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            color: #00feba;
+            margin-bottom: 20px;
+            border-left: 4px solid #00feba;
+            padding-left: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        ul li {
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            margin-bottom: 10px;
+            border-left: 3px solid #5b548a;
+            border-radius: 6px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px 10px;
+            color: #888;
+            font-size: 0.95rem;
+            border-top: 1px solid #333;
+            margin-top: 50px;
+        }
+
+        a {
+            color: #00feba;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-shadow: 0 0 5px #00feba;
+        }
+
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 20px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Pratham Jain</h1>
+    <p>2nd Year Engineering Student</p>
+</header>
+
+<section class="about">
+    <h2>About Me</h2>
+    <p>
+        I’m just a guy messing around in tech.
+    </p>
+</section>
+
+<section class="learning">
+    <h2>Currently Learning</h2>
+    <ul>
+        <li>Spring Boot & REST APIs</li>
+        <li>React + Tailwind CSS</li>
+        <li>DSA in Java</li>
+        <li>Version Control with Git</li>
+    </ul>
+</section>
+
+<section class="tech-stack">
+    <h2>Tech Stack</h2>
+    <ul>
+        <li>Languages: Java, JavaScript</li>
+        <li>Frameworks: Spring Boot, React (Basics)</li>
+        <li>Tools: Git, GitHub, VS Code, IntelliJ</li>
+    </ul>
+</section>
+
+<section class="hobbies">
+    <h2>Hobbies</h2>
+    <ul>
+        <li>I produce music in my free time</li>
+    </ul>
+</section>
+
+<footer>
+    <p>📧 jainpratham370@gmail.com</p>
+    <p>🔗 <a href="https://github.com/prathamjainone" target="_blank">GitHub</a></p>
+</footer>
+
+</body>
+</html>
